@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Clickable AniDB Titles",
+  "version": "1.0",
+  "description": "Allows you to click on an anime title add it to your clipboard.",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.anidb.net/anime/*"],
+      "js": ["interactive.js"],
+      "css": ["style.css"]
+    }
+  ]
+
+}
